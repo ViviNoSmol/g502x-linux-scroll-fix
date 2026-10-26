@@ -40,12 +40,10 @@ This is 100% better than literally disabling the whole Logitech hid module and b
 ## Installation
 
 ```bash
+git clone https://github.com/ViviNoSmol/g502x-linux-scroll-fix.git && cd g502x-linux-scroll-fix
 sudo mkdir -p /etc/libinput
 sudo cp local-overrides.quirks /etc/libinput/local-overrides.quirks
 ```
-
-> If you already have an `/etc/libinput/local-overrides.quirks`, append the
-> section to it instead of overwriting the file.
 
 Then log out and back in (or reboot) so libinput re-reads the device.
 
